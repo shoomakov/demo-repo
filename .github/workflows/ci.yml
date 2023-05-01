@@ -36,7 +36,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 16
-        repository: your-username/e2e-tests
+        repository: shoomakov/demo-repo_e2e
         ref: main
         path: e2e-tests
     - name: Install dependencies
