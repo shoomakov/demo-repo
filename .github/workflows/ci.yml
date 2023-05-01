@@ -31,6 +31,8 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    if: ${{ always() && contains(join(needs.*.result, ','), 'success') }}
+    needs: [build]
     steps:
     - uses: actions/setup-node@v3
       with:
