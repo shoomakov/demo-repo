@@ -37,7 +37,7 @@ jobs:
       with:
         node-version: 16
         repository: shoomakov/demo-repo_e2e
-        ref: main
+        ref: master
         path: e2e-tests
     - name: Install dependencies
       run: cd e2e-tests && npm ci
